@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { useState } from "react"
+import { StaticImageData } from "next/image";
 import Image from "next/image"
 import logo from "../../../public/logo.png"
 import React from "react";
@@ -17,7 +17,7 @@ export default function CarsPage() {
   type Car = {
     id: string;
     name: string;
-    image: any;
+    image: StaticImageData;
     description: string;
     features: string[];
     specs: Record<string, string>;
