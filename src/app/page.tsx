@@ -1,27 +1,20 @@
 import Image from "next/image"
 import Link from "next/link"
-
+import logo from "../../public/logo.png"
+import Kia from "../../public/Carens.jpg"
+import Dzire from "../../public/Dzire.jpg"
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col bg-white">
       <header className="sticky top-0 z-50 w-full border-b bg-white shadow-sm">
         <div className="container mx-auto flex h-16 items-center justify-between px-4">
           <Link href="/" className="flex items-center gap-2 font-bold text-xl text-gray-800">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth={2}
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M8 7h8m-8 5h8m-4 5v-5m-8 9h16a2 2 0 002-2V6a2 2 0 00-2-2H4a2 2 0 00-2 2v14a2 2 0 002 2z"
-              />
-            </svg>
-            <span>Simar Tour and Travels</span>
+          <Image
+                  alt="Logo"
+                  className="h-12 w-12"
+                  src={logo}
+                />          
+                  <span>Simar Tour and Travels</span>
           </Link>
           <nav className="hidden md:flex gap-6">
             <Link href="/" className="font-medium text-orange-600 transition-colors">
@@ -93,7 +86,7 @@ export default function Home() {
                   alt="Kia Carens"
                   className="aspect-video overflow-hidden rounded-xl object-cover object-center shadow-lg"
                   height="310"
-                  src="/placeholder.svg?height=620&width=1100"
+                  src={Kia}
                   width="550"
                 />
               </div>
@@ -120,7 +113,7 @@ export default function Home() {
                   alt="Kia Carens"
                   className="aspect-video w-full object-cover"
                   height="225"
-                  src="/placeholder.svg?height=450&width=800"
+                  src={Kia}
                   width="400"
                 />
                 <div className="p-4">
@@ -130,13 +123,12 @@ export default function Home() {
                       Spacious 7-seater MPV perfect for family trips and group travel.
                     </p>
                     <div className="flex items-center gap-4">
-                      <div className="font-medium text-gray-900">From ₹2,500/day</div>
-                      <Link
-                        href="/booking"
+                    <a
+    href="tel:9760600013" 
                         className="ml-auto inline-flex items-center justify-center rounded-md border border-transparent bg-orange-600 px-3 py-1.5 text-sm font-medium text-white shadow-sm hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
                       >
                         Book Now
-                      </Link>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -146,7 +138,7 @@ export default function Home() {
                   alt="Swift Dzire"
                   className="aspect-video w-full object-cover"
                   height="225"
-                  src="/placeholder.svg?height=450&width=800"
+                  src={Dzire}
                   width="400"
                 />
                 <div className="p-4">
@@ -156,13 +148,12 @@ export default function Home() {
                       Compact sedan with excellent fuel efficiency, ideal for city travel.
                     </p>
                     <div className="flex items-center gap-4">
-                      <div className="font-medium text-gray-900">From ₹1,800/day</div>
-                      <Link
-                        href="/booking"
+                    <a
+    href="tel:9760600013" 
                         className="ml-auto inline-flex items-center justify-center rounded-md border border-transparent bg-orange-600 px-3 py-1.5 text-sm font-medium text-white shadow-sm hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
                       >
                         Book Now
-                      </Link>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -313,24 +304,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="flex justify-center">
-              <Link
-                href="/reviews"
-                className="inline-flex items-center justify-center rounded-md border border-gray-300 bg-white px-5 py-2.5 text-base font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
-              >
-                Read More Reviews
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="ml-2 h-4 w-4"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
-            </div>
+           
           </div>
         </section>
         <section className="w-full py-12 md:py-24 lg:py-32 bg-orange-50">
@@ -354,7 +328,7 @@ export default function Home() {
                     Book Now
                   </Link>
                   <Link
-                    href="/contact"
+                    href="/booking"
                     className="inline-flex items-center justify-center rounded-md border border-gray-300 bg-white px-5 py-2.5 text-base font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
                   >
                     Contact Us
