@@ -14,7 +14,7 @@ export default function Home() {
                   className="h-12 w-12"
                   src={logo}
                 />          
-                  <span>Simar Tour and Travels</span>
+                  <span>Simar Airline cabs</span>
           </Link>
           <nav className="hidden md:flex gap-6">
             <Link href="/" className="font-medium text-orange-600 transition-colors">
@@ -53,7 +53,7 @@ export default function Home() {
                     Reliable Car Rental Service
                   </h1>
                   <p className="max-w-[600px] text-gray-600 md:text-xl">
-                    Experience comfort and convenience with Simar Tour and Travels. Quality cars at affordable rates.
+                    Experience comfort and convenience with Simar Airline cabs. Quality cars at affordable rates.
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -185,7 +185,7 @@ export default function Home() {
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter md:text-4xl text-gray-900">How It Works</h2>
                 <p className="max-w-[900px] text-gray-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Renting a car with Simar Tour and Travels is quick and easy. Follow these simple steps to get on the
+                  Renting a car with Simar Airline cabs is quick and easy. Follow these simple steps to get on the
                   road.
                 </p>
               </div>
@@ -296,7 +296,7 @@ export default function Home() {
                       ))}
                     </div>
                     <p className="text-gray-600">
-                    &quot;Great service and well-maintained cars. The team at Simar Tour and Travels was very
+                    &quot;Great service and well-maintained cars. The team at Simar Airline cabs was very
                       professional.&quot;
                     </p>
                     <div className="font-medium text-gray-900">- Amit K.</div>
@@ -346,93 +346,122 @@ export default function Home() {
                 </div>
               </div>
               <div className="flex items-center justify-center">
-                <div className="w-full rounded-lg border border-orange-200 bg-white p-6 shadow-md">
-                  <h3 className="text-xl font-bold text-gray-900 mb-4">Contact Information</h3>
-                  <div className="space-y-4">
-                    <div className="flex items-start gap-3">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-5 w-5 mt-0.5 text-orange-600"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        strokeWidth={2}
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                        />
-                      </svg>
-                      <div>
-                        <h4 className="font-medium text-gray-900">Phone</h4>
-                        <p className="text-gray-700 font-medium">+91 98765 43210</p>
-                      </div>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-5 w-5 mt-0.5 text-orange-600"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        strokeWidth={2}
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                        />
-                      </svg>
-                      <div>
-                        <h4 className="font-medium text-gray-900">Email</h4>
-                        <p className="text-gray-700">bookings@simartourtravels.com</p>
-                      </div>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-5 w-5 mt-0.5 text-orange-600"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        strokeWidth={2}
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                        />
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                      </svg>
-                      <div>
-                        <h4 className="font-medium text-gray-900">Main Office</h4>
-                        <p className="text-gray-700">123 Main St, City Center</p>
-                      </div>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-5 w-5 mt-0.5 text-orange-600"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        strokeWidth={2}
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                        />
-                      </svg>
-                      <div>
-                        <h4 className="font-medium text-gray-900">Business Hours</h4>
-                        <p className="text-gray-700">Mon-Sat: 8am - 8pm, Sun: 10am - 4pm</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+  <div className="w-full rounded-lg border border-orange-200 bg-white shadow-md overflow-hidden">
+    <div className="p-6 border-b border-orange-100">
+      <h3 className="text-xl font-bold text-gray-900 mb-4">Contact Information</h3>
+      <div className="flex flex-col md:flex-row gap-6">
+        {/* Left Column */}
+        <div className="flex flex-col gap-4 flex-1">
+          {/* Phone */}
+          <div className="flex items-start gap-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5 mt-0.5 text-orange-600"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+              />
+            </svg>
+            <div>
+              <h4 className="font-medium text-gray-900">Phone</h4>
+              <p className="text-gray-700 font-medium">9760600013, 9458508004</p>
+            </div>
+          </div>
+
+          {/* Email */}
+          <div className="flex items-start gap-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5 mt-0.5 text-orange-600"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+              />
+            </svg>
+            <div>
+              <h4 className="font-medium text-gray-900">Email</h4>
+              <p className="text-gray-700">bookings@simartourtravels.com</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Right Column */}
+        <div className="flex flex-col gap-4 flex-1">
+          {/* Main Office */}
+          <div className="flex items-start gap-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5 mt-0.5 text-orange-600"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+              />
+              <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+            <div>
+              <h4 className="font-medium text-gray-900">Main Office</h4>
+              <p className="text-gray-700">Sharda Nagar ,Saharanpur, Uttar Pradesh 247001</p>
+            </div>
+          </div>
+
+          {/* Business Hours */}
+          <div className="flex items-start gap-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5 mt-0.5 text-orange-600"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+              />
+            </svg>
+            <div>
+              <h4 className="font-medium text-gray-900">Business Hours</h4>
+              <p className="text-gray-700">Mon-Sun: 24 x 7</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {/* Map Section */}
+    <div className="h-64 w-full">
+      <iframe
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13825.978816999275!2d77.51231774115851!3d29.965209699412675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390eeafb1684a8b1%3A0x92964b2b64ef3765!2sSharda%20Nagar%2C%20Saharanpur%2C%20Uttar%20Pradesh%20247001!5e0!3m2!1sen!2sin!4v1746077790053!5m2!1sen!2sin"
+        className="w-full h-full border-0"
+        allowFullScreen={true}
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+        title="Simar Airline cabs Location"
+        aria-label="Map showing the location of Simar Airline cabs office"
+      ></iframe>
+    </div>
+  </div>
+</div>
+
             </div>
           </div>
         </section>
@@ -454,7 +483,7 @@ export default function Home() {
                 d="M8 7h8m-8 5h8m-4 5v-5m-8 9h16a2 2 0 002-2V6a2 2 0 00-2-2H4a2 2 0 00-2 2v14a2 2 0 002 2z"
               />
             </svg>
-            <p className="text-sm text-gray-600">© 2025 Simar Tour and Travels. All rights reserved.</p>
+            <p className="text-sm text-gray-600">© 2025 Simar Airline cabs. All rights reserved.</p>
           </div>
           <nav className="flex gap-4 sm:gap-6">
             <Link href="/terms" className="text-sm text-gray-600 hover:text-gray-900 hover:underline">

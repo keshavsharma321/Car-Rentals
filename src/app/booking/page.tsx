@@ -20,7 +20,7 @@ export default function BookingPage() {
                   className="h-12 w-12"
                   src={logo}
                 />          
-            <span>Simar Tour and Travels</span>
+            <span>Simar Airline cabs</span>
           </Link>
           <nav className="hidden md:flex gap-6">
             <Link href="/" className="font-medium text-gray-800 hover:text-orange-600 transition-colors">
@@ -92,7 +92,7 @@ export default function BookingPage() {
                     <div>
                       <h3 className="font-medium text-gray-900">Phone</h3>
                       <p className="text-gray-700 font-medium">9760600013, 9458508004</p>
-                      <p className="text-sm text-gray-600">Available 8am - 8pm, 7 days</p>
+                      <p className="text-sm text-gray-600">Available 24 x 7</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
@@ -155,7 +155,7 @@ export default function BookingPage() {
                     </svg>
                     <div>
                       <h3 className="font-medium text-gray-900">Business Hours</h3>
-                      <p className="text-gray-700">Mon-Sat: 8am - 8pm, Sun: 10am - 4pm</p>
+                      <p className="text-gray-700">Mon-Sun: 24 x 7</p>
                     </div>
                   </div>
                 </div>
@@ -189,7 +189,7 @@ export default function BookingPage() {
                 d="M8 7h8m-8 5h8m-4 5v-5m-8 9h16a2 2 0 002-2V6a2 2 0 00-2-2H4a2 2 0 00-2 2v14a2 2 0 002 2z"
               />
             </svg>
-            <p className="text-sm text-gray-600">© 2025 Simar Tour and Travels. All rights reserved.</p>
+            <p className="text-sm text-gray-600">© 2025 Simar Airline cabs. All rights reserved.</p>
           </div>
           <nav className="flex gap-4 sm:gap-6">
             <Link href="/terms" className="text-sm text-gray-600 hover:text-gray-900 hover:underline">

@@ -189,7 +189,7 @@ export default function CarsPage() {
                   className="h-12 w-12"
                   src={logo}
                 />          
-            <span>Simar Tour and Travels</span>
+            <span>Simar Airline cabs</span>
           </Link>
           <nav className="hidden md:flex gap-6">
             <Link href="/" className="font-medium text-gray-800 hover:text-orange-600 transition-colors">
@@ -334,7 +334,7 @@ export default function CarsPage() {
                 d="M8 7h8m-8 5h8m-4 5v-5m-8 9h16a2 2 0 002-2V6a2 2 0 00-2-2H4a2 2 0 00-2 2v14a2 2 0 002 2z"
               />
             </svg>
-            <p className="text-sm text-gray-600">© 2025 Simar Tour and Travels. All rights reserved.</p>
+            <p className="text-sm text-gray-600">© 2025 Simar Airline cabs. All rights reserved.</p>
           </div>
           <nav className="flex gap-4 sm:gap-6">
             <Link href="/terms" className="text-sm text-gray-600 hover:text-gray-900 hover:underline">
