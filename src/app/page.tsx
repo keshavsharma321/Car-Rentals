@@ -359,7 +359,7 @@ export default function Home() {
               </div>
             </div>
 
-          <div className="mx-auto max-w-3xl p-4 sm:p-6 lg:p-8">
+<div className="mx-auto max-w-3xl p-4 sm:p-6 lg:p-8">
   {reviewSubmitted ? (
     <div className="rounded-lg border border-green-200 bg-green-50 p-6 text-center shadow-sm">
       <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-green-100">
@@ -410,39 +410,22 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-          <div>
-            <label htmlFor="carType" className="block text-sm font-medium text-gray-700 mb-1">Car You Rented</label>
-            <select
-              id="carType"
-              name="carType"
-              value={reviewFormData.carType}
-              onChange={handleReviewChange}
-              required
-              className="w-full rounded-md border border-gray-300 px-4 py-2 text-sm focus:border-orange-500 focus:ring-1 focus:ring-orange-500"
-            >
-              <option value="">Select a car</option>
-              <option value="Kia Carens">Kia Carens</option>
-              <option value="Swift Dzire">Swift Dzire</option>
-            </select>
-          </div>
-          <div>
-            <label htmlFor="rating" className="block text-sm font-medium text-gray-700 mb-1">Your Rating</label>
-            <select
-              id="rating"
-              name="rating"
-              value={reviewFormData.rating}
-              onChange={handleReviewChange}
-              required
-              className="w-full rounded-md border border-gray-300 px-4 py-2 text-sm focus:border-orange-500 focus:ring-1 focus:ring-orange-500"
-            >
-              <option value="5">5 Stars - Excellent</option>
-              <option value="4">4 Stars - Very Good</option>
-              <option value="3">3 Stars - Good</option>
-              <option value="2">2 Stars - Fair</option>
-              <option value="1">1 Star - Poor</option>
-            </select>
-          </div>
+        <div>
+          <label htmlFor="rating" className="block text-sm font-medium text-gray-700 mb-1">Your Rating</label>
+          <select
+            id="rating"
+            name="rating"
+            value={reviewFormData.rating}
+            onChange={handleReviewChange}
+            required
+            className="w-full rounded-md border border-gray-300 px-4 py-2 text-sm focus:border-orange-500 focus:ring-1 focus:ring-orange-500"
+          >
+            <option value="5">5 Stars - Excellent</option>
+            <option value="4">4 Stars - Very Good</option>
+            <option value="3">3 Stars - Good</option>
+            <option value="2">2 Stars - Fair</option>
+            <option value="1">1 Star - Poor</option>
+          </select>
         </div>
 
         <div>
@@ -474,6 +457,7 @@ export default function Home() {
     </div>
   )}
 </div>
+
 
           </div>
         </section>
