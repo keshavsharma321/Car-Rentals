@@ -1,9 +1,46 @@
+"use client"
 import Image from "next/image"
 import Link from "next/link"
 import logo from "../../public/logo.png"
 import Kia from "../../public/Carens.jpg"
 import Dzire from "../../public/Dzire.jpg"
+import { useState } from "react"
+
 export default function Home() {
+   const [reviewFormData, setReviewFormData] = useState({
+    name: "",
+    email: "",
+    carType: "",
+    rating: "5",
+    reviewText: "",
+  })
+  const [reviewSubmitted, setReviewSubmitted] = useState(false)
+
+  const handleReviewChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    const { name, value } = e.target
+    setReviewFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }))
+  }
+
+  const handleReviewSubmit = (e: React.FormEvent) => {
+    e.preventDefault()
+    // In a real app, you would send this data to your backend
+    console.log("Review submitted:", reviewFormData)
+    setReviewSubmitted(true)
+    // Reset form after 3 seconds
+    setTimeout(() => {
+      setReviewSubmitted(false)
+      setReviewFormData({
+        name: "",
+        email: "",
+        carType: "",
+        rating: "5",
+        reviewText: "",
+      })
+    }, 3000)
+  }
   return (
     <div className="flex min-h-screen flex-col bg-white">
       <header className="sticky top-0 z-50 w-full border-b bg-white shadow-sm">
@@ -307,7 +344,140 @@ export default function Home() {
            
           </div>
         </section>
+         {/* Review Form Section */}
         <section className="w-full py-12 md:py-24 lg:py-32 bg-orange-50">
+          <div className="container mx-auto px-4 md:px-6">
+            <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
+              <div className="space-y-2">
+                <div className="inline-block rounded-lg bg-orange-100 px-3 py-1 text-sm text-orange-800">
+                  Share Your Experience
+                </div>
+                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl text-gray-900">Leave a Review</h2>
+                <p className="max-w-[900px] text-gray-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  Your feedback helps us improve our service and helps other customers make informed decisions.
+                </p>
+              </div>
+            </div>
+
+          <div className="mx-auto max-w-3xl p-4 sm:p-6 lg:p-8">
+  {reviewSubmitted ? (
+    <div className="rounded-lg border border-green-200 bg-green-50 p-6 text-center shadow-sm">
+      <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-green-100">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-6 w-6 text-green-600"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          strokeWidth={2}
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+      <h3 className="text-xl font-semibold text-green-800 mb-2">Thank You for Your Review!</h3>
+      <p className="text-green-700 text-sm sm:text-base">We appreciate you taking the time to share your experience with us.</p>
+    </div>
+  ) : (
+    <div className="rounded-xl border border-gray-200 bg-white p-8 shadow-lg transition-all">
+      <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center">Leave a Review</h2>
+      <form onSubmit={handleReviewSubmit} className="space-y-6">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+          <div>
+            <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              value={reviewFormData.name}
+              onChange={handleReviewChange}
+              required
+              className="w-full rounded-md border border-gray-300 px-4 py-2 text-sm focus:border-orange-500 focus:ring-1 focus:ring-orange-500"
+              placeholder="John Doe"
+            />
+          </div>
+          <div>
+            <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={reviewFormData.email}
+              onChange={handleReviewChange}
+              required
+              className="w-full rounded-md border border-gray-300 px-4 py-2 text-sm focus:border-orange-500 focus:ring-1 focus:ring-orange-500"
+              placeholder="john@example.com"
+            />
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+          <div>
+            <label htmlFor="carType" className="block text-sm font-medium text-gray-700 mb-1">Car You Rented</label>
+            <select
+              id="carType"
+              name="carType"
+              value={reviewFormData.carType}
+              onChange={handleReviewChange}
+              required
+              className="w-full rounded-md border border-gray-300 px-4 py-2 text-sm focus:border-orange-500 focus:ring-1 focus:ring-orange-500"
+            >
+              <option value="">Select a car</option>
+              <option value="Kia Carens">Kia Carens</option>
+              <option value="Swift Dzire">Swift Dzire</option>
+            </select>
+          </div>
+          <div>
+            <label htmlFor="rating" className="block text-sm font-medium text-gray-700 mb-1">Your Rating</label>
+            <select
+              id="rating"
+              name="rating"
+              value={reviewFormData.rating}
+              onChange={handleReviewChange}
+              required
+              className="w-full rounded-md border border-gray-300 px-4 py-2 text-sm focus:border-orange-500 focus:ring-1 focus:ring-orange-500"
+            >
+              <option value="5">5 Stars - Excellent</option>
+              <option value="4">4 Stars - Very Good</option>
+              <option value="3">3 Stars - Good</option>
+              <option value="2">2 Stars - Fair</option>
+              <option value="1">1 Star - Poor</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label htmlFor="reviewText" className="block text-sm font-medium text-gray-700 mb-1">Your Review</label>
+          <textarea
+            id="reviewText"
+            name="reviewText"
+            value={reviewFormData.reviewText}
+            onChange={handleReviewChange}
+            required
+            rows={4}
+            className="w-full rounded-md border border-gray-300 px-4 py-2 text-sm focus:border-orange-500 focus:ring-1 focus:ring-orange-500"
+            placeholder="Share your experience with our service..."
+          ></textarea>
+        </div>
+
+        <div className="flex justify-end">
+          <button
+            type="submit"
+            className="inline-flex items-center gap-2 rounded-md bg-orange-600 px-5 py-2 text-sm font-medium text-white shadow hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-orange-500 transition"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+            </svg>
+            Submit Review
+          </button>
+        </div>
+      </form>
+    </div>
+  )}
+</div>
+
+          </div>
+        </section>
+        <section className="w-full py-12 md:py-24 lg:py-10 bg-orange-50">
           <div className="container mx-auto px-4 md:px-6">
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
               <div className="flex flex-col justify-center space-y-4">
